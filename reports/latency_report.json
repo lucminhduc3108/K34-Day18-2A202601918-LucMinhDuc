@@ -1,0 +1,44 @@
+{
+  "chunking": {
+    "n_docs": 26,
+    "n_chunks": 100,
+    "total_ms": 0.4,
+    "per_doc_ms": 0.02
+  },
+  "enrichment": {
+    "sampled_chunks": 3,
+    "total_ms": 10855.8,
+    "per_chunk_ms": 3618.6,
+    "projected_full_corpus_ms": 361860.0,
+    "note": "API-bound, 1 call/chunk (combined mode)"
+  },
+  "indexing": {
+    "n_chunks": 100,
+    "total_ms": 31659.6,
+    "per_chunk_ms": 316.6
+  },
+  "search_hybrid": {
+    "n_queries": 8,
+    "avg_ms": 148.9,
+    "min_ms": 136.7,
+    "max_ms": 161.1
+  },
+  "rerank_crossencoder": {
+    "model": "BAAI/bge-reranker-v2-m3",
+    "avg_ms": 3688.8,
+    "min_ms": 3276.7,
+    "max_ms": 4217.9
+  },
+  "rerank_flashrank": {
+    "model": "ms-marco-TinyBERT (default)",
+    "avg_ms": 10.1,
+    "min_ms": 9.4,
+    "max_ms": 11.3
+  },
+  "end_to_end_retrieval": {
+    "note": "hybrid search + cross-encoder rerank (no LLM)",
+    "avg_ms": 3837.8,
+    "min_ms": 3433.4,
+    "max_ms": 4354.6
+  }
+}
